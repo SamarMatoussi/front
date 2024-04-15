@@ -8,25 +8,15 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { UIModule } from '../../shared/ui/ui.module';
-
-import {JobsRoutingModule} from "./jobs-routing.module";
 import { GestionUtilisateurComponent } from './list/list.component';
-import { GridComponent } from './grid/grid.component';
-import { ApplyComponent } from './apply/apply.component';
-import { DetailsComponent } from './details/details.component';
-import { CategoriesComponent } from './categories/categories.component';
-import { CandidateListComponent } from './candidate-list/candidate-list.component';
-import { CandidateOverviewComponent } from './candidate-overview/candidate-overview.component'; 
+import { GestionUtilisateurRoutingModule } from './gestionUtilisateur-routing.module';
+
+
 
 @NgModule({
   declarations: [
     GestionUtilisateurComponent,
-    GridComponent,
-    ApplyComponent,
-    DetailsComponent,
-    CategoriesComponent,
-    CandidateListComponent,
-    CandidateOverviewComponent
+
   ],
   imports: [
     CommonModule,
@@ -37,8 +27,8 @@ import { CandidateOverviewComponent } from './candidate-overview/candidate-overv
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
     UIModule,
-    JobsRoutingModule,
+    GestionUtilisateurRoutingModule,
   ]
 })
 
-export class JobsModule { }
+export class GestionUtilisateurModule { }

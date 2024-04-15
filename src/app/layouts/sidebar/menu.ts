@@ -356,7 +356,7 @@ export const MENU: MenuItem[] = [
         {
             "id": 58,
             "label": "Gestion des Utilisateurs",
-            "link": "/jobs/list",
+            "link": "/gestionUtilisateur/list",
             "parentId": 57
         }
         ,

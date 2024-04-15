@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'icons', loadChildren: () => import('./icons/icons.module').then(m => m.IconsModule) },
   { path: 'charts', loadChildren: () => import('./chart/chart.module').then(m => m.ChartModule) },
   { path: 'maps', loadChildren: () => import('./maps/maps.module').then(m => m.MapsModule) },
-  { path: 'jobs', loadChildren: () => import('./jobs/jobs.module').then(m => m.JobsModule) },
+  { path: 'gestionUtilisateur', loadChildren: () => import('./gestionUtlisateur/gestionUtilisateur.module').then(m => m.GestionUtilisateurModule) },
 ];
 
 @NgModule({

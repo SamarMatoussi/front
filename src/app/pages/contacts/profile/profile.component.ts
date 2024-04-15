@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { revenueBarChart, statData } from './data';
 
 import { ChartType } from './profile.model';
 
@@ -32,7 +31,7 @@ export class ProfileComponent implements OnInit {
    * Fetches the data
    */
   private _fetchData() {
-    this.revenueBarChart = revenueBarChart;
-    this.statData = statData;
+    this.revenueBarChart = this.revenueBarChart;
+    this.statData = this.statData;
   }
 }

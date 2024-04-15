@@ -44,7 +44,7 @@ export class RegisterComponent implements OnInit{
     this.servauth.register(this.signupForm.value).subscribe(
       data => {
         this.successmsg = true;
-        this.router.navigate(['/pages/email-verification']);
+        this.router.navigate(['/account/login']);
       },
       error => {
         this.error = error ? error : '';

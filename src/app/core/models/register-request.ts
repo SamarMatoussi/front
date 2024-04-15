@@ -4,5 +4,5 @@ export class RegisterRequest {
     phone!:string
     email !: string;
     password !:string;
-    role="ADMINISTRATEUR";
+    role !: string;
 }
